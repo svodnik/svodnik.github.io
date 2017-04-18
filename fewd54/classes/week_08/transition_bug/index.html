@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+	
+	<title>Transitions</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Open+Sans:400,600,700|Source+Code+Pro:500,600" rel="stylesheet">
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<section class="transitions">
+		<h1>CSS3 Transitions on Hover</h1>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Hover &mdash; No Transition</h2>
+				<img class="bug bug-t bug-no-trans" src="images/bug-1.svg">
+				<br>
+				<p class="code">
+					.bug {<br>
+					&nbsp;&nbsp;opacity: 1;<br>
+					}<br>
+					<br>
+					.bug:hover {<br>
+					&nbsp;&nbsp;opacity: 0;<br>
+					}<br>
+				</p>
+			</div>
+			<div class="col-md-6">
+				<h2>Hover &mdash; With Transition</h2>
+				<img class="bug bug-t" src="images/bug-2.svg">
+				<br>
+				<p class="code">
+					.bug {<br>
+					&nbsp;&nbsp;opacity: 1;<br>
+					&nbsp;&nbsp;transition: all .3s ease-in-out;<br>
+					}<br>
+					<br>
+					.bug:hover {<br>
+					&nbsp;&nbsp;opacity: 0;<br>
+					}<br>
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="transitions-click">
+		<h1>CSS3 Transitions on Click</h1>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Toggle Class &mdash; No Transition</h2>
+				<img id="bug1" class="bug  bug-no-trans" src="images/bug-3.svg">
+				<br>
+				<button id="bug1Btn">Click here!</button>
+				<br>
+				<h3>JS:</h3>
+				<p class="code">
+					$('button').on('click', function () {<br>
+					&nbsp;&nbsp;$('.bug').toggleClass('faded');<br>
+					});<br>
+				</p>
+				<h3>CSS:</h3>
+				<p class="code">
+					.bug {<br>
+					&nbsp;&nbsp;opacity: 1;<br>
+					}<br>
+					<br>
+					.faded {<br>
+					&nbsp;&nbsp;opacity: 0;<br>
+					}<br>
+				</p>
+			</div>
+			<div class="col-md-6">
+				<h2>Toggle Class &mdash; With Transition</h2>
+				<img id="bug2" class="bug" src="images/bug-4.svg">
+				<br>
+				<button id="bug2Btn">Click here!</button>
+				<br>
+				<h3>JS:</h3>
+				<p class="code">
+					$('button').on('click', function () {<br>
+					&nbsp;&nbsp;$('.bug').toggleClass('faded');<br>
+					});<br>
+				</p>
+				<h3>CSS:</h3>
+				<p class="code">
+					.bug {<br>
+					&nbsp;&nbsp;opacity: 1;<br>
+					&nbsp;&nbsp;transition: all .3s ease-in-out;<br>
+					}<br>
+					<br>
+					.faded {<br>
+					&nbsp;&nbsp;opacity: 0;<br>
+					}<br>
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+	<h1>CSS3 Transforms (on timer)</h1>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>translateX</h2>
+			<p class="code">
+				transform: translateX(50px);
+			</p>
+			<img class="bug translateX" src="images/bug-1.svg">
+			
+		</div>
+		<div class="col-md-4">
+			<h2>translateY</h2>
+			<p class="code">
+				transform: translateY(50px);
+			</p>
+			<img class="bug translateY" src="images/bug-2.svg">
+		</div>
+		<div class="col-md-4">
+			<h2>translateX</h2>
+			<p class="code">
+				transform: scale(1.5, 1.5);
+			</p>
+			<img class="bug scale" src="images/bug-3.svg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>rotate</h2>
+			<p class="code">transform: rotate(180deg);</p>
+			<img class="bug rotate" src="images/bug-4.svg">
+		</div>
+		<div class="col-md-4">
+			<h2>rotate</h2>
+			<p class="code">transform: rotate(-180deg);</p>
+			<img class="bug rotate-neg" src="images/bug-5.svg">
+		</div>
+		<div class="col-md-4">
+			<h2>skew</h2>
+			<p class="code">transform: skew(30deg, 30deg)</p>
+			<img class="bug skew" src="images/bug-6.svg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>rotateY</h2>
+			<p class="code">transform: rotateY(180deg);</p>
+			<img class="bug rotateY" src="images/bug-1.svg">
+		</div>
+		<div class="col-md-8">
+			<h2>translate and rotate</h2>
+			<p class="code">transform: translateY(50px) rotateY(180deg);</p>
+			<img class="bug combo-2" src="images/bug-2.svg">
+		</div>
+	</div>
+	
+
+
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
