@@ -1,10 +1,11 @@
 // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyByltC3JIKFE7DP4GaRikdXUx3nrauJCrY",
-    authDomain: "new-secret-app.firebaseapp.com",
-    databaseURL: "https://new-secret-app.firebaseio.com",
-    storageBucket: "new-secret-app.appspot.com",
-    messagingSenderId: "465362591766"
+    apiKey: "AIzaSyCJALvitYbkkEdMEQQrvK4VK5euESAyOwo",
+    authDomain: "public-produce.firebaseapp.com",
+    databaseURL: "https://public-produce.firebaseio.com",
+    projectId: "public-produce",
+    storageBucket: "public-produce.appspot.com",
+    messagingSenderId: "386298252792"
 
   };
   firebase.initializeApp(config);
