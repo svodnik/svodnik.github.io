@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSD 8 Project 3: Final Project</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/main/ga-logo.png" width="20" heigh="20" alt="general assembly logo">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="slides.html">Slides</a></li>
+                    <li><a href="homework.html">Homework</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="projects.html">Projects Overview</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="slackbot.html">Slackbot</a></li>
+                            <li><a href="feedr.html">Feedr</a></li>
+                            <li><a href="final-project.html">Final</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resources.html">Misc</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a target="_blank" href="https://jsdsnacks.youcanbook.me/">Snack signup</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+            <div class="container">
+            <h1>Final Project</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- OVERVIEW -->
+                <h2>Overview</h2>
+                <p>
+                    For the final project, you'll be designing and building a web app of your choice. This project will test your knowledge of JavaScript and ask you to apply everything you've learned in this course. The result will be a web app that you can add to your portfolio. You have a wide range of possibilities to choose from: a blog users can comment on; an app that allows users to search for social media posts; or even an application that logs users geolocations. Work with your instructor to create project goals that are realistic given the scope and timing of the class.
+                </p>
+                <hr>
+
+                <!-- TECHNICAL REQUIREMENTS -->
+                <h2>Technical Requirements</h2>
+                <ul>
+                    <li>Use JavaScript to correctly structure the code for a web application:</li>
+                    <ul>
+                        <li>Structure your application to be a SPA (single page application)</li>
+                        <li>Make HTTP requests to your own Firebase URL</li>
+                        <li>Make at least one HTTP request to a third-party server</li>
+                        <li>CRUD functionality should be present</li>
+                        <li>Use either vanilla JS or jQuery to perform DOM manipulation</li>
+                        <li>Listen for events and add interactivity based on user input</li>
+                    </ul>
+                    <li>Hosting</li>
+                    <ul>
+                        <li>App should be hosted on Firebase</li>
+                    </ul>
+                </ul>
+
+                <h4>Bonus / Best Practices</h4>
+
+                <p>
+                    Your instructor will provide feedback on how well you execute best practices. Even though it is not part of the requirements, you should keep these in mind:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Clean And Readable Code</strong>. The instructor should be able to read and follow your code easily. Maintain clean and readable code including: consistent indentation, code commenting and use of proper and consistent naming conventions.
+                    </li>
+                    <li>
+                        <strong>Object Oriented and/or Functional</strong>. Implement function closures, keep code modular, maintain a separation of concerns, only put code on the global scope when absolutely necessary, use prototypal inheritance.
+                    </li>
+                </ul>
+                <hr>
+
+                <!-- SPA ARCHITECTURE -->
+                <h2>SPA Architecture</h2>
+
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Single-page_application">Single Page Applications (SPA)</a> are all the rage today. The single page aspect of a SPA refers to a single page coming from the server, such as our index.html page. Once loaded, the SPA changes views by using client-side routing, which loads partial HTML snippets called templates. Think back to our Advanced APIs lesson where we showed specific views based off the login state of a user. The goal for you implementing a SPA is to not make users have to refresh the entire DOM every time they need a new piece of data to be represented in the UI.
+                </p>
+
+                <p class="text-center">
+                    <img src="https://i-msdn.sec.s-msft.com/dynimg/IC690875.png" alt="spa-architecture">
+                </p>
+
+                <hr>
+
+                <!-- Necessary Deliverables -->
+                <h2>Necessary Deliverables</h2>
+                <ol>
+                    <li>A <strong>production ready web application</strong>, SPA, hosted live on the web.</li>
+                    <li>A <strong>new git repository hosted on Github</strong> where codebase is maintained.</li>
+                    <li>A 5-10 minute <strong>presentation</strong> including 3 technical hurdles, 2 new things you learned, Q&amp;A.</li>
+                </ol>
+                <hr>
+
+                <!-- GETTING STARTED -->
+                <h2>Gettings Started</h2>
+                <ul>
+                    <li>Think of a problem in the world, or even in your personal life, and apply what you've learned to build an application that can help solve the issue.</li>
+                    <li>Research different social media APIs (i.e. twitter) and see what kind of information you can use from them.</li>
+                    <li>Look at different online video games for inspiration.</li>
+                    <li>Explore projects created by previous <a href="https://gallery.generalassemb.ly/JS?metro=">JSD students</a> and <a href="https://gallery.generalassemb.ly/BEWD?metro=">Back End Web Development students</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+</html>
