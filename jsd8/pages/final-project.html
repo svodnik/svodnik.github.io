@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GA SF JSD 8 Projects: Final Project</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html">
+					<img src="../img/ga-logo.png" width="20" heigh="20" alt="general assembly logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="lessons.html">Lessons</a></li>
+						<li><a href="homework.html">Homework</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="projects.html">Projects Overview</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="slackbot.html">Slackbot</a></li>
+								<li><a href="feedr.html">Feedr</a></li>
+								<li class="active"><a href="final-project.html">Final</a></li>
+							</ul>
+						</li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="https://bitly.com/JSD8Exit" target="_blank">Exit Ticket</a></li>
+						<li><a href="https://jsdsnacks.youcanbook.me" target="_blank">Snack Signup</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<div class="blueheader">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>PROJECT 3: FINAL PROJECT</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overview">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="text-center">For the final project, you'll be designing and building a web app of your choice.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="push-top-lg push-bottom-lg">
+					<h2>Overview</h2>
+					<p>This project will test your knowledge of JavaScript and ask you to apply everything you've learned in this course. The result will be a web app that you can add to your portfolio. You have a wide range of possibilities to choose from: a blog users can comment on; an app that allows users to search for social media posts; or even an application that logs users geolocations. Work with your instructor to create project goals that are realistic given the scope and timing of the class.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TECHNICAL REQUIREMENTS -->
+	<div class="light-grey-bg pad-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="white-info-card">
+						<h3 class="darkgrey">TECHNICAL REQUIREMENTS</h3>
+						<hr class="shorty-rule-black">
+						<ul>
+							<li>Use JavaScript to correctly structure the code for a web application:</li>
+							<ul>
+								<li>Structure your application to be a SPA (single page application)</li>
+								<li>Make HTTP requests to your own Firebase URL</li>
+								<li>Make at least one HTTP request to a third-party server</li>
+								<li>CRUD functionality should be present</li>
+								<li>Use either vanilla JS or jQuery to perform DOM manipulation</li>
+								<li>Listen for events and add interactivity based on user input</li>
+							</ul>
+							<li>Hosting</li>
+							<ul>
+								<li>App should be hosted on Firebase</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="white-info-card">
+						<h3 class="darkgrey">BONUS / BEST PRACTICES</h3>
+						<hr class="shorty-rule-black">
+						<p>
+							Your instructional team will provide feedback on how well you execute best practices. Even though it is not part of the requirements, you should keep these in mind:
+						</p>
+
+						<ul>
+							<li>
+								<strong>Clean And Readable Code</strong>. The instructor should be able to read and follow your code easily. Maintain clean and readable code including: consistent indentation, code commenting and use of proper and consistent naming conventions.
+							</li>
+							<li>
+								<strong>Object Oriented and/or Functional</strong>. Implement function closures, keep code modular, maintain a separation of concerns, only put code on the global scope when absolutely necessary, use prototypal inheritance.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="light-blue-bg">
+		<div class="container">
+			<div class="row">
+				<div class="info-card push-bottom">
+	                <!-- SPA ARCHITECTURE -->
+					<h2>SPA Architecture</h2>
+
+					<p>
+						<a href="https://en.wikipedia.org/wiki/Single-page_application">Single Page Applications (SPA)</a> are all the rage today. The single page aspect of a SPA refers to a single page coming from the server, such as our index.html page. Once loaded, the SPA changes views by using client-side routing, which loads partial HTML snippets called templates. Think back to our Advanced APIs lesson where we showed specific views based off the login state of a user. The goal for you implementing a SPA is to not make users have to refresh the entire DOM every time they need a new piece of data to be represented in the UI.
+					</p>
+
+					<p class="text-center">
+						<img src="https://i-msdn.sec.s-msft.com/dynimg/IC690875.png" alt="spa-architecture">
+					</p>
+				</div>
+
+
+                <!-- Necessary Deliverables -->
+
+
+				<div class="container push-bottom pad-bottom">
+					<h2 class="push-top push-bottom">Necessary Deliverables</h2>
+					<div class="row pad-top">
+						<div class="col-md-4 text-center">
+							<img src="../img/icon_check.svg" class="icon">
+							<h4>A <strong>production ready web application</strong>, SPA, hosted live on the web.</h4>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="../img/icon_check.svg" class="icon">
+							<h4>A <strong>new git repository hosted on Github</strong> where codebase is maintained.</h4>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="../img/icon_check.svg" class="icon">
+							<h4>A 5-10 minute <strong>presentation</strong> including 3 technical hurdles, 2 new things you learned, Q&amp;A.</h4>
+						</div>
+					</div>
+				</div>
+
+
+                <!-- GETTING STARTED -->
+				<div class="info-card push-bottom">
+					<h2>Getting Started</h2>
+					<ul>
+						<li>Think of a problem in the world, or even in your personal life, and apply what you've learned to build an application that can help solve the issue.</li>
+						<li>Research different social media APIs (i.e. twitter) and see what kind of information you can use from them.</li>
+						<li>Look at different online video games for inspiration.</li>
+						<li>Explore projects created by previous <a href="https://gallery.generalassemb.ly/JS?metro=">JSD students</a> and <a href="https://gallery.generalassemb.ly/BEWD?metro=">Back End Web Development students</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container timeline-bar push-top push-bottom-sm">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="push-top push-bottom">Timeline</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12>">
+				<table class="table">
+					<thead>
+						<tr class="table-header">
+							<th>DUE DATE</th>
+							<th>MILESTONE</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>October 16</td>
+							<td>Project idea &amp; list of possible APIs to use</td>
+						</tr>
+						<tr class="table-stripe">
+							<td>October 23</td>
+							<td>Pseudocode of basic features &amp; code for basic API functionality</td>
+						</tr>
+						<tr>
+							<td>October 30</td>
+							<td>Code for basic API functionality &amp; draft of HTML/CSS and DOM manipulation code</td>
+						</tr>
+						<tr class="table-stripe">
+							<td>November 6</td>
+							<td>Final code for API functionality &amp; second draft of HTML/CSS and DOM manipulation code</td>
+						</tr>
+						<tr>
+							<td>November 13</td>
+							<td>Final project &amp; presentation!</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<p class="col-md-12">
+					Based on a site assembled by <a href="https://github.com/cheshireoctopus">Chandler Moisen</a> and <a href="https://www.linkedin.com/in/maria-stegner-2333b14">Maria Stegner</a> for General Assembly's <a href="https://generalassemb.ly/education/front-end-web-development">Frontend Web Development</a> part-time course. Code for the original site is at <a href="https://github.com/cheshireoctopus/gafewd-portal">https://github.com/cheshireoctopus/gafewd-portal</a> - feel free to fork for your own class.
+				</p>
+			</div>
+		</div>
+	</footer>	
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>

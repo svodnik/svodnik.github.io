@@ -1,185 +1,257 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-    <title>JSD 8</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+	<title>GA SF JSD 8</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/main/ga-logo.png" width="20" heigh="20" alt="general assembly logo">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active" href="index.html"><a>Home</a></li>
-                    <li><a href="main/slides.html">Slides</a></li>
-                    <li><a href="main/homework.html">Homework</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="main/projects.html">Projects Overview</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="main/slackbot.html">Slackbot</a></li>
-                            <li><a href="main/feedr.html">Feedr</a></li>
-                            <li><a href="main/final-project.html">Final</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="main/resources.html">Misc</a></li>
-                    <li><a href="main/about.html">About</a></li>
-                    <li><a target="_blank" href="https://jsdsnacks.youcanbook.me/">Snack signup</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="jumbotron">
-            <div class="container">
-            <h1>JavaScript Development 8</h1>
-        </div>
-    </div>
-    <div class="container">
-        <!-- <div class="row text-center">
-            <div class="col-md-12 text-center">
-                <img src="img/main/fewd-logo.png" alt="general assembly logo">
-            </div>
-            <div class="col-md-12">
-                <hr>
-            </div>
-        </div> -->
-        <div class="row">
-            <div class="col-md-12">
-                <p>Hello, and welcome to the home for General Assembly's <a href="https://generalassemb.ly/education/javascript-development">JavaScript Development</a> 8 (JSD8) Course.</p>
-                <hr>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+					<img src="img/ga-logo.png" width="20" heigh="20" alt="general assembly logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="pages/lessons.html">Lessons</a></li>
+					<li><a href="pages/homework.html">Homework</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="pages/projects.html">Projects Overview</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="pages/slackbot.html">Slackbot</a></li>
+							<li><a href="pages/feedr.html">Feedr</a></li>
+							<li><a href="pages/final-project.html">Final</a></li>
+						</ul>
+					</li>
+					<li><a href="pages/resources.html">Resources</a></li>
+					<li><a href="https://bitly.com/JSD8Exit" target="_blank">Exit Ticket</a></li>
+					<li><a href="https://jsdsnacks.youcanbook.me" target="_blank">Snack Signup</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-                <!-- INSTRUCTIONAL TEAM -->
-                <h2>Instructional Team</h2>
-                <div class="row text-center">
-                    <div class="col-md-4 text-center">
-                        <img src="img/main/sasha.jpg" class="img-rounded" alt="">
-                        <h3>Sasha Vodnik</h3>
-                        <p>sv@sashavodnik.com</p>
-                    </div>
-                    <!--<div class="col-md-4 text-center">
-                        <img src="img/main/joe.jpg" class="img-rounded" alt="">
-                        <h3>Joe Keohan</h3>
-                        <p>jkeohan@gmail.com</p>
-                    </div>-->
-                </div>
-                <hr>
+	<header>
+		<div class="blueheader">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>JavaScript Development</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overview">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<h3>Hello!</h3>
+						<h3>Welcome to the home for General Assembly SF JavaScript Development (JSD) Course 8.</h3>
+					</div>
+					<div class="col-md-5">
+						<img src="img/icon_code.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-                <!-- LOGISTICS -->
-                <h2>Class Info</h2>
-                <p>JavaScript Development (JSD) is comprised of 60 hours of in-class instruction spread evenly over 20 classes.</p>
-                <p>JSD breaks down into four units:</p>
-                <ol>
-                    <li>Fundamentals of JavaScript</li>
-                    <li>The Browser and APIs</li>
-                    <li>Persisting Data and Advanced Topics</li>
-                    <li>Building and Deploying Applications</li>
-                </ol>
-                <p>In addition to weekly homework assignments, students are expected to complete three, standalone <a href="main/projects.html">projects</a>:</p>
-                <ol>
-                    <li><a href="main/slackbot.html">Slackbot</a></li>
-                    <li><a href="main/feedr.html">Feedr</a></li>
-                    <li><a href="main/final-project.html">Final Project</a></li>
-                </ol>
-                <hr>
+	<div class="container pad-top pad">
+		<div class="row pad-top">
+<!--
+			<div class="col-md-12">
+				<h2 class="push-bottom">Instructor</h2>
+			</div>
+-->
+			<div class="row">
+				<div class="col-md-6 text-center">
+					<img src="img/sasha.jpg" class="img-circle" alt="Sasha">
+					<h3>Sasha Vodnik</h3>
+					<p class="text-center">Instructor</p>
+				</div>
 
-                <h2>Logistics</h2>
-                <p><strong>Start:</strong> Wednesday, 09/06/2017</p>
-                <p><strong>End:</strong> Monday, 11/13/2017</p>
-                <p><strong>Meets:</strong> Monday/Wednesday from 6:30PM - 9:30PM</p>
-                <p><strong>Location:</strong> <a target="_blank" href="https://goo.gl/maps/fxovc7voG4z">225 Bush St., 5th Floor</a></p>
-                <p><strong>Classroom:</strong> 8</p>
-                <hr>
 
+<!--
+				<div class="col-md-4 text-center">
+					<img src="img/IA_IMG_FILENAME.jpg" class="img-circle" alt="IA_FIRSTNAME">
+					<h3>IA FIRST LAST</h3>
+					<a href=“mailto:IAEMAIL”>
+						<p class="text-center">IA EMAIL</p>
+					</a>
+				</div>
+-->
+
+				<!-- LOGISTICS -->
+				<div class="col-md-6">
+					<div class="grey-info-card">
+						<h3 class="darkgrey">LOGISTICS</h3>
+						<hr class="shorty-rule-black">
+						<h4 class="push-bottom-sm">START: Wednesday, 09/06/2017</h4>
+						<h4 class="push-bottom-sm">END: Monday, 11/13/2017</h4>
+						<h4>MEETS: Monday and Wednesday
+						<h4>6:30pm - 9:30pm</h4>
+						<hr class="shorty-rule-black">
+						<img src="img/icon_marker.svg" width="50px">
+						<h4>LOCATION: <a target="_blank" href="https://goo.gl/maps/fxovc7voG4z">225 Bush St</a>, 5th Fl, Classroom 8</h4>
+<!--						<hr class="shorty-rule-black">
+						<h4>OFFICE HOURS: Mon &amp; Wed 5:30-6:30pm, Classroom 8</h4>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="push-top-lg push-bottom-lg">
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="text-center">Overview</h2>
+			</div>
+				<div class="col-md-12 text-center pad-bottom">
+					<hr class="shorty-rule-black centered-shorty">
+					<p>JavaScript Development (JSD) is comprised of 60 hours of in-class instruction spread evenly over 20 classes.</p>
+					<p>JSD breaks down into four units:</p>
+					<br>
+					<h2>1.</h2>
+					<h3 class="push-bottom-lg">Fundamentals of JavaScript</h3>
+					<h2>2.</h2>
+					<h3 class="push-bottom-lg">The Browser and APIs</h3>
+					<h2>3.</h2>
+					<h3 class="push-bottom-lg">Persisting Data and Advanced Topics</h3>
+					<h2>4.</h2>
+					<h3 class="push-bottom-lg">Building and Deploying Applications</h3>
+				</div>
+		</div>
+	</div>
+
+	<div class="light-blue-bg">
+		<div class="container">
+			<div class="row">
                 <!-- PRE-COURSE CHECKLIST -->
-                <h2>Pre-Course Checklist</h2>
-                <h3>Required tutorials</h3>
+				<h2 class="text-center push-bottom">Pre-Course Checklist</h2>
+				<hr class="shorty-rule-black centered-shorty">
+				<h3 class="text-center push-top-lg push-bottom-lg">Required tutorials</h3>
+		
                 <ul>
-                    <li>Complete all of the lessons and challenges in CodeAcademy's <a href="https://www.codecademy.com/en/tracks/javascript-upgraded">JavaScript Fundamentals track</a>. This track consists of three lessons, the first two of which have a corresponding code challenge. The three lessons are as follows: Getting Started With Programming, Introduction to Functions in JS and Introduction to 'For' Loops in JS.
-                    Completing these lessons will give you your first taste of JavaScript and prepare you to hit the ground running on day 1 of the course. Don't worry if you have questions on any of this stuff, as we'll be reviewing all of it in class. (Note: Sometimes, when using CodeAcademy, you'll see certain content that's only available to users with pro accounts. Feel free to skip over this content, unless you already have a pro account.)</li>
-                    <li>Complete CodeSchool's <a href="https://try.github.io">Try Git exercise</a>. This will introduce you to git and GitHub, two technologies we'll be using to store our code and collaborate with others during the course.</li>
+					<li>
+						<p>CodeAcademy's <a href="https://www.codecademy.com/en/tracks/javascript-upgraded">JavaScript Fundamentals track</a> (all of the lessons and challenges).</p>
+						<p>This track consists of three lessons, the first two of which have a corresponding code challenge. The three lessons are as follows: Getting Started With Programming, Introduction to Functions in JS and Introduction to 'For' Loops in JS.
+						Completing these lessons will give you your first taste of JavaScript and prepare you to hit the ground running on day 1 of the course. Don't worry if you have questions on any of this stuff, as we'll be reviewing all of it in class. (Note: Sometimes, when using CodeAcademy, you'll see certain content that's only available to users with pro accounts. Feel free to skip over this content, unless you already have a pro account.)</p>
+					</li>
+					<li>
+						<p>CodeSchool's <a href="https://try.github.io">Try Git exercise</a>.</p>
+						<p>This will introduce you to git and GitHub, two technologies we'll be using to store our code and collaborate with others during the course.</p>
+					</li>
                 </ul>
-                <h3>Optional tutorials</h3>
-                <p>JSD assumes students possess a working knowledge of HTML and CSS. Unless you have a strong grasp of both HTML and CSS, You should work through and complete General Assembly's <a href="https://dash.generalassemb.ly/">Dash</a> - an online tool that teaches basic HTML, CSS, and JavaScript through projects in the browser.</p>
-                <!--
-                <p>Additionally, students must complete the following before the start of class:</p>
-                <ol>
-                    <li>Complete all of three of the lessons in CodeAcademy's <a target="_blank" href="https://www.codecademy.com/en/tracks/javascript-upgraded">JavaScript Fundamentals</a> track.</li>
-                    <li>Complete CodeSchool's <a target="_blank" href="https://try.github.io/levels/1/challenges/1">Try Git</a> exercise. This will introduce you to git and GitHub, two technologies we'll be using to store our code and collaborate with others during the course.</li>
-                </ol>
-                <p>A document outlining the pre-course checklist can be found <a href="materials/pre_course/checklist.pdf">here</a>.</p>
-            -->
-                <hr>
+				<h3 class="text-center push-top-lg push-bottom-lg">Optional tutorials</h3>
+				<ul>
+					<li>
+						<p>General Assembly's <a href="https://dash.generalassemb.ly/">Dash</a></p>
+						<p>JSD assumes students possess a working knowledge of HTML and CSS. Unless you have a strong grasp of both HTML and CSS, You should work through and complete Dash - an online tool that teaches basic HTML, CSS, and JavaScript through projects in the browser.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+<!--
+		<div class="container">
+			<div class="row">
 
-                <!-- GRADUATION REQUIREMENTS -->
-                <h2>Graduation Requirements</h2>
-                <p>In order to successfully complete JSD, students must:</p>
-                <ul>
-                    <li>Submit 80% of homework assignments</li>
-                    <li>Attend 85% of classes (miss no more than 3)</li>
-                    <li>Successfully complete the course's <a href="main/projects.html">final project</a></li>
-                </ul>
-                <hr>
+					<div class="col-md-3">
+					<a href="https://github.com/login" target="_blank">
+						<p class="red-button">1. Sign up for a GitHub account</p>
+					</a>
+				</div>
 
-                <!-- COMMUNICATION -->
-                <h2>Communication</h2>
-                <p>Communication between the instructional team and students is paramount for a successful learning environment. Students are strongly encouraged, at their convenience, to reach out to members of the instructional team with any questions.</p>
-                <p><a href="http://slack.com">Slack</a> will serve as the primary tool for communication between students and the instructional team. Before the first class, you will receive an invitation to our Slack organization:</p>
-                <p><a href="https://js-sf-8.slack.com/">https://js-sf-8.slack.com/</a></p>
-                <p>Slack can be accessed through the browser or through a native application that runs on your machine.</p>
-                <hr>
+				<div class="col-md-4">
+					<a href="https://dash.generalassemb.ly/" target="_blank">
+						<p class="red-button">1. Complete projects 1-3 on GA's Dash Tutorial</p>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="https://www.sublimetext.com/3" target="_blank">
+						<p class="red-button">2. Install Sublime Text 3 (or an editor of your choice)</p>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="https://www.google.com/chrome/" target="_blank">
+						<p class="red-button">3. Install Google Chrome</p>
+					</a>
+				</div>
+			</div>
+		</div>
+-->
+	</div>
 
-                <!-- HOMEWORK -->
-                <h2>Homework</h2>
-                <p>Homework will be assigned at the end of class every Wednesday and is due the following Monday.</p>
-                <p>Files and materials for homework will be distributed during class, and are also available through this website.</p>
-                <p>Students will push (upload) homework to the class homework Github repository for feedback and grading.</p>
-                <p><b>Note:</b> while late homework will be accepted, these submissions will not receive feedback. Please schedule office hours if you would like feedback on late homework.</p>
-                <hr>
+	<div class="light-grey-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="white-info-card">
+						<h3 class="darkgrey">GRADUATION REQUIREMENTS</h3>
+						<hr class="shorty-rule-black">
+						<p>In order to successfully complete JSD, students must:
+						</p>
+						<ul class="push-bottom-lg">
+							<li>Submit 80% of homework assignments</li>
+							<li>Miss no more than three classes</li>
+							<li>Successfully complete and submit a final project</li>
+						</ul>
+						<img class="icon" src="img/icon_certificate.svg">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="white-info-card">
+						<h3 class="darkgrey">HOMEWORK</h3>
+						<hr class="shorty-rule-black">
+						<p class="push-bottom">
+							Homework will be assigned at the end of class every Wednesday and is due the following Monday. Files and materials for homework will be available in the <a href="https://github.com/svodnik/JS-SF-8-resources">Resources GitHub repo</a> for this class.
+						</p>
+						<p class="push-bottom">
+							Students will push homework to the class Homework GitHub repo and submit a pull request for feedback and grading.
+						</p>
+						<p>
+							NOTE: while late homework will be accepted, it will not receive feedback.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="white-info-card">
+						<h3 class="darkgrey">ADMIN / STUDENT SERVICES</h3>
+						<hr class="shorty-rule-black">
+						<p class="push-bottom-lg">
+							All questions concerning enrollment/payment, or subjects you would prefer not to discuss with the instructor, should be addressed to GA's Student Services team at: <a href="mailto:studentservicessf@generalassemb.ly">Student Services SF</a>
+						</p>
+						<img class="icon" src="img/icon_help.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-                <!-- CALENDAR -->
-                <h2>Course calendar</h2>
-                <p>Includes all scheduled classes and holidays, as well as snack signups.</p>
-                <p>To use:</p>
-                <ol>
-                    <li>Copy the following calendar link:
-                    <code><a href="webcal://p53-calendars.icloud.com/published/2/hu3E_dBzPi6QTRUEdjwaGVAc0X3Vvg-6uVUcUt9Mu07VJ3zuo5ZSy1-yuB640BpuQaSMMwvxfZw5zyvS42ytRcxG3lLgxXlMByMste1wPsQ">webcal://p53-calendars.icloud.com/published/2/hu3E_dBzPi6QTRUEdjwaGVAc0X3Vvg-6uVUcUt9Mu07VJ3zuo5ZSy1-yuB640BpuQaSMMwvxfZw5zyvS42ytRcxG3lLgxXlMByMste1wPsQ</a></code>
-                    </li>
-                    <li>In your calendar program, select the option to subscribe to a calendar, then paste the copied link as the calendar to subscribe to.
-                        <ul>
-                            <li><strong>Google Calendar</strong>: <code>Other Calendars</code> (sidebar) > <code>Add by URL</code></li>
-                            <li><strong>macOS Calendar</strong>: <code>File</code> > <code>New Calendar Subscription</code></li>
-                        </ul>
-                    </li>
-                </ol>
-                <hr>
-
-                <!-- ADMIN -->
-                <h2>Admin/Student Services</h2>
-                <p>All questions concerning enrollment/payment, or subjects you would prefer not to discuss with the instructional team, should be addressed to GA's Student Services team at: <u>studentservicessf@generalassemb.ly</u></p>
-            </div>
-        </div>
-    </div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<p class="col-md-12">
+					Based on a site assembled by <a href="https://github.com/cheshireoctopus">Chandler Moisen</a> and <a href="https://www.linkedin.com/in/maria-stegner-2333b14">Maria Stegner</a> for General Assembly's <a href="https://generalassemb.ly/education/front-end-web-development">Frontend Web Development</a> part-time course. Code for the original site is at <a href="https://github.com/cheshireoctopus/gafewd-portal">https://github.com/cheshireoctopus/gafewd-portal</a> - feel free to fork for your own class.
+				</p>
+			</div>
+		</div>
+	</footer>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-</body>
-
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
 </html>

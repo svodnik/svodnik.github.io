@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GA SF JSD 8 Projects: Slackbot</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html">
+					<img src="../img/ga-logo.png" width="20" heigh="20" alt="general assembly logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="lessons.html">Lessons</a></li>
+						<li><a href="homework.html">Homework</a></li>
+						<li class="dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="projects.html">Projects Overview</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="slackbot.html">Slackbot</a></li>
+								<li><a href="feedr.html">Feedr</a></li>
+								<li><a href="final-project.html">Final</a></li>
+							</ul>
+						</li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="https://bitly.com/JSD8Exit" target="_blank">Exit Ticket</a></li>
+						<li><a href="https://jsdsnacks.youcanbook.me" target="_blank">Snack Signup</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<div class="blueheader">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>PROJECT 1: SLACKBOT</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overview">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="text-center">For our first project, we will build a Slackbot on top of the popular Github bot called <a href="https://github.com/slackhq/hubot-slack">Hubot</a>.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 push-top text-center">
+				<h2 class="push-top push-bottom">Overview</h2>
+				<p>
+					We've been using Slack to communicate with each other for the first couple weeks of the class. Now it is time to build our very own Slackbot to add a fun, interactive component to the chat room. A Slackbot is an integration into Slack that can either respond to specific phrases that are mentioned in Slack or they can post things from outside of slack into a channel or private conversation. There are now entire startups built on top of Slackbots. For example, people have built Slackbots that let you hail an Uber from them or schedule meetings with different members of your team (where it searches your Google Calendar). One of the most popular Slackbot's lets people post random gifs based on phrases into a channel from Giphy.
+				</p>
+				<p>
+					Hubot is a robot that was created by GitHub, that enhances their company chat. Hubot can deploy their site, act as a source of fun comments, and also automate their daily tasks. It is powerful and can be extended in a way that developers can build whatever they want on top of it.
+				</p>
+				<p>
+					Hubot scripts are generally written in <a href="http://coffeescript.org/">CoffeeScript</a>, a language that compiles into JavaScript. Thankfully, these scripts can also be written in vanilla JavaScript. Your bot can respond to whatever you like, but it must perform at least <u>three</u> different actions.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="light-grey-bg push-top pad-top push-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="white-info-card">
+						<h3 class="darkgrey">Hubot: Basic Functionality</h3>
+						<hr class="shorty-rule-black">
+						<h4>Respond</h4>
+						<p>The <code>respond</code> command will respond to specific text it sees in the Slack channel. You can then use the <code>send</code> command to post a message to the channel.</p>
+					
+						<h4>Send</h4>
+						<p><code>send</code> lets you send a message to the Slack channel. We usually use this hand-in-hand with <code>respond</code>. For example, when someone says something (i.e. 'Hi') on the channel, we respond by sending "Howdy". Of course, it will only send or respond based on the commands and words you teach it (by adding it to your code).</p>
+					
+						<h4>Reply</h4>
+						<p><code>reply</code> lets you reply to a certain user or to the person who sent the original message. This includes the <code>@</code> in front of the user's name so they get alerted.</p>
+					
+						<h4>Random</h4>
+						<p>Hubot also has a <code>random</code> command which will return a random result based on what you give it. Check out the starter code for some examples.</p>			
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="white-info-card">
+						<h3 class="darkgrey">Technical Requirements</h3>
+						<hr class="shorty-rule-black">
+						<h4>Your Slackbot should:</h4>
+						<ul>
+							<li>Have a message post to Slack based on user input</li>
+							<li>Perform at least 3 different actions.</li>
+							<li>At least one of the commands must send a direct message or reply.</li>
+							<li>Leverage the Hubot API</li>
+							<li>Use at least 1 conditional to change the outcome of a Slackbot.</li>
+						</ul>
+						<p><strong>Bonus:</strong></p>
+						<ul>
+							<li>Leverage a for loop to iterate over a collection</li>
+							<li>Introduce a random component</li>
+							<li>Include an image in the response in addition to text</li>
+						</ul>			
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container timeline-bar push-top push-bottom-sm">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="push-top push-bottom">Necessary Deliverables</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="container push-bottom pad-bottom">
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<img src="../img/icon_check.svg" class="icon">
+				<h4>A working Slackbot, built by you, that can be run in the class Slack room.</h4>
+			</div>
+			<div class="col-md-4 text-center">
+				<img src="../img/icon_check.svg" class="icon">
+				<h4>A new git repository hosted on Github, where your codebase is maintained.</h4>
+			</div>
+			<div class="col-md-4 text-center">
+				<img src="../img/icon_check.svg" class="icon">
+				<h4>A <code>README.md</code> file with explanations of what your bot does, what commands it responds to, the approach taken, installation instructions, unsolved problems, etc.</h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="light-grey-bg push-top pad-top push-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="white-info-card">
+						<h3 class="darkgrey">Suggested Ways to Get Started</h3>
+						<hr class="shorty-rule-black">
+						<ul>
+							<li>Review existing Slackbots and Hubots for inspiration.</li>
+							<li>Begin by writing down what your different commands will be and expected outcomes before writing any code.</li>
+							<li>Write pseudocode before writing any code.</li>
+							<li>Get Hubot working out of the box before writing any custom code.</li>
+							<li>Test small pieces of functionality frequently to make sure everything is working.</li>
+							<li>Use tools such as Stack Overflow, Google and documentation resources to solve problems.</li>
+						</ul>			
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="white-info-card">
+						<h3 class="darkgrey">Useful Resources</h3>
+						<hr class="shorty-rule-black">
+						<p>Key Resources</p>
+						<ul class="list-unstyled">
+							<li><a href="https://github.com/github/hubot/blob/master/docs/scripting.md">Hubot Scripting</a></li>
+							<li><a href="https://github.com/slackhq/hubot-slack">Hubot adapter for Slack</a></li>
+							<li><a href="https://api.slack.com/bot-users">Slack API Documentation</a></li>
+						</ul>
+						<p>Examples</p>
+						<ul class="list-unstyled">
+							<li><a href="https://github.com/hubot-scripts/hubot-shipit">Hubot Ship It</a></li>
+							<li><a href="https://api.slack.com/community">Slackbot Community</a></li>
+							<li><a href="https://github.com/github/hubot-scripts">Hubot scripts</a></li>
+						</ul>
+						<p>Additional Reading</p>
+						<ul class="list-unstyled">
+							<li><a href="http://www.michikono.com/2015/07/10/in-depth-tutorial-on-writing-a-slackbot/">Great in-depth tutorial on writing a Slackbot</a></li>
+							<li><a href="http://theprogrammingbutler.com/blog/archives/2011/10/28/hubot-scripts-explained/">Hubot scripts explained</a></li>
+							<li><a href="http://www.slideshare.net/rscaduto/hubot-talk">Create your own chatbot with Hubot &amp; Coffeescript</a></li>
+							<li><a href="http://www.sitepoint.com/getting-started-slack-bots/">Getting Started with Slackbots</a></li>
+						</ul>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<p class="col-md-12">
+					Based on a site assembled by <a href="https://github.com/cheshireoctopus">Chandler Moisen</a> and <a href="https://www.linkedin.com/in/maria-stegner-2333b14">Maria Stegner</a> for General Assembly's <a href="https://generalassemb.ly/education/front-end-web-development">Frontend Web Development</a> part-time course. Code for the original site is at <a href="https://github.com/cheshireoctopus/gafewd-portal">https://github.com/cheshireoctopus/gafewd-portal</a> - feel free to fork for your own class.
+				</p>
+			</div>
+		</div>
+	</footer>	
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>
