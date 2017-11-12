@@ -1,39 +1,119 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html lang="en" lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sasha Vodnik</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" >
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav>
+            <ul>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#online">Online Courses</a></li>
+                <li><a href="#teach">Teaching</a></li>
+            </ul>
+        </nav>
+        <header>
+<!--            <p class="logo"><img src="img/sasha.jpg"></p>-->
 
-<head>
-  <title>Mad Lib</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Your description goes here">
-  <meta name="keywords" content="one, two, three">
-
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-  <!-- external CSS link -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width">
-</head>
-
-<body>
-
-  <h1 id="xForY"></h1>
-
-  <div id="inputs">
-    <button id="create">Create New Startup</button>
-    <button id="save">Favorite Startup</button>
-    <button id="print">Print Favorites</button>
-  </div>
-
-  <h2 id="favorites">
-
-  </h2>
-
-
-  <script src='http://code.jquery.com/jquery-latest.min.js'></script>
-  <script src="js/app.js"></script>
-
-</body>
-
+            <div class="container">
+                <div class="v-aligned-text">
+                    <h1>Sasha Vodnik</h1>
+                    <p class="header-desc">Author &amp; Instructor on Web Development</p>
+                </div>
+                <div class="social">
+                    <div><a href="https://github.com/svodnik"><img src="img/github.png" alt="GitHub"></a></div>
+                    <div><a href="https://twitter.com/sashavodnik"><img src="img/twitter.png" alt="Twitter">@sashavodnik</a></div>
+                    <div><a href="https://www.linkedin.com/in/sashavodnik/"><img src="img/linkedin.png" alt="LinkedIn"></a></div>
+                </div>
+            </div>
+        </header>
+        <section id="books" class="books">
+            <h2>Books</h2>
+            <ul>
+                <li>
+                    <p><a href="https://www.cengagebrain.com/shop/isbn/9781305394056"><img src="img/intro2.jpg" alt="HTML5 &amp; CSS3 Illustrated Introductory, 2nd Edition"></a></p>
+                    <p class="title"><a href="https://www.cengagebrain.com/shop/isbn/9781305394056">HTML5 &amp; CSS3 Illustrated Introductory</a></p>
+                    <p>2nd Edition (2016)</p>
+                </li>
+                <li>
+                    <p><a href="https://www.cengagebrain.com/shop/isbn/9781305394049"><img src="img/comp2.jpg" alt="HTML5 &amp; CSS3 Illustrated Complete, 2nd Edition"></a></p>
+                    <p class="title"><a href="https://www.cengagebrain.com/shop/isbn/9781305394049">HTML5 &amp; CSS3 Illustrated Complete</a></p>
+                    <p>2nd Edition (2016)</p>
+                </li>
+                <li>
+                    <p><a href="https://www.cengagebrain.com/shop/isbn/9781305078444"><img src="img/js6.jpg" alt="JavaScript, The Web Warrior Series, 6th Edition"></a></p>
+                    <p class="title"><a href="https://www.cengagebrain.com/shop/isbn/9781305078444">JavaScript, The Web Warrior Series</a></p>
+                    <p>6th Edition (2015)</p>
+                </li>
+                <li>
+                    <p><a href="https://www.cengagebrain.com/shop/isbn/9781285075822"><img src="img/xml3.jpg" alt="New Perspectives on XML, Comprehensive, 3rd Edition"></a></p>
+                    <p class="title"><a href="https://www.cengagebrain.com/shop/isbn/9781285075822">New Perspectives on XML, Comprehensive</a></p>
+                    <p>3rd Edition (2015)</p>
+                </li>
+                <li>
+                    <p><a href="https://www.cengagebrain.com/shop/isbn/9781305263628"><img src="img/wcrcc.jpg" alt="The Web Collection Revealed, Creative Cloud, 1st Edition"></a></p>
+                    <p class="title"><a href="https://www.cengagebrain.com/shop/isbn/9781305263628">The Web Collection Revealed, Creative Cloud</a></p>
+                    <p>1st Edition (2015)</p>
+                </li>
+                <li>
+                    <p><a href="https://www.cengagebrain.com/shop/isbn/9781337251457"><img src="img/access2016.jpg" alt="New Perspectives Microsoft Office 365 &amp; Access 2016 Comprehensive, 1st Edition"></a></p>
+                    <p class="title"><a href="https://www.cengagebrain.com/shop/isbn/9781337251457">New Perspectives Microsoft Office 365 &amp; Access 2016 Comprehensive</a></p>
+                    <p>1st Edition (2017)</p>
+                </li>
+            </ul>
+        </section>
+        <section id="online" class="online">
+            <h2>Online Courses</h2>
+            <ul>
+                <li>
+                    <p><a href="https://www.linkedin.com/learning/learning-app-building-with-vanilla-javascript"><img src="img/lil-vanilla.jpg" alt="Learning App Building with Vanilla JavaScript"></a></p>
+                    <p class="title"><a href="https://www.linkedin.com/learning/learning-app-building-with-vanilla-javascript">Learning App Building with Vanilla JavaScript</a></p>
+                    <p>LinkedIn Learning, 2017</p>
+                </li>
+                <li>
+                    <p><a href="https://www.linkedin.com/learning/learning-chrome-web-developer-tools"><img src="img/lil-chrome.jpg" alt="Learning Chrome Web Developer Tools"></a></p>
+                    <p class="title"><a href="https://www.linkedin.com/learning/learning-chrome-web-developer-tools">Learning Chrome Web Developer Tools</a></p>
+                    <p>LinkedIn Learning, 2017</p>
+                </li>
+                <li>
+                    <p><a href="https://www.linkedin.com/learning/building-web-applications-with-ajax"><img src="img/lil-ajax.jpg" alt="Building Web Applications with Ajax"></a></p>
+                    <p class="title"><a href="https://www.linkedin.com/learning/building-web-applications-with-ajax">Building Web Applications with Ajax</a></p>
+                    <p>LinkedIn Learning, 2017</p>
+                </li>
+                <li>
+                    <p><a href="https://www.linkedin.com/learning/processing-and-interchanging-json-data"><img src="img/lil-json.jpg" alt="Processing and Interchanging JSON Data"></a></p>
+                    <p class="title"><a href="https://www.linkedin.com/learning/processing-and-interchanging-json-data">Processing and Interchanging JSON Data</a></p>
+                    <p>LinkedIn Learning, 2017</p>
+                </li>
+            </ul>                    
+        </section>
+        <section id="teach" class="teach">
+            <h2>Teaching</h2>
+            <ul>
+                <li>
+                    <p><a href="https://generalassemb.ly/education/javascript-development"><img src="img/js.png" alt="JavaScript logo"></a></p>
+                    <p class="title"><a href="https://generalassemb.ly/education/javascript-development">JavaScript Development</a></p>
+                    <p>10-week part-time course</p>
+                    <p>General Assembly San Francisco</p>
+                </li>
+                <li>
+                    <p><a href="https://generalassemb.ly/education/front-end-web-development"><img src="img/htmlcss.svg" alt="HTML5 and CSS3 logos"></a></p>
+                    <p class="title"><a href="https://generalassemb.ly/education/front-end-web-development">Front End Web Development</a></p>
+                    <p>10-week part-time course</p>
+                    <p>General Assembly San Francisco</p>
+                </li>
+            </ul>                
+        </section>
+    </body>
 </html>

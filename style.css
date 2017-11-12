@@ -1,0 +1,168 @@
+/*
+$color1: rgba(58, 183, 149, 1);
+$color2: rgba(160, 232, 175, 1);
+$color3: rgba(134, 186, 161, 1);
+$color4: rgba(237, 234, 208, 1);
+$color5: rgba(255, 207, 86, 1);
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Arvo', serif;
+*/
+
+/* reset styles */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, 
+a, code, img, strong, ol, ul, li, article, aside,  
+figure, figcaption, footer, header, nav, output, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+h1, h2, header p {
+    font-family: 'Roboto Slab', serif;
+}
+h1, h2, .header-desc {
+    padding: 1rem 0;
+}
+h1 {
+    font-size: 7rem;
+    font-weight: bold;
+}
+.header-desc {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+nav {
+    background-color: rgb(117,126,164);    
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+nav a {
+    color: #fff;
+}
+nav ul {
+    width: auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 2vw;
+}
+header {
+    padding-left: 2em;
+}
+header, section ul {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+header, section {
+    min-height: 100vh;
+}
+header, footer {
+    background-color: #fff;
+    color: rgb(48,66,108);
+}
+header .container {
+    width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+header .container div {
+    padding: 0 1rem;
+}
+header .container .social {
+    font-family: 'Roboto Slab', serif;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-size: 2em;  
+    padding: 0.4em;
+}
+header .container .social div {
+   margin: 0 20px;
+   font-size: 1.6rem;
+   display: inline-block;
+}
+header .container .social img {
+    max-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+section {
+    padding: 4rem 1rem 1rem;
+    text-align: center;
+}
+section h2 {
+    margin-bottom: 1em;
+}
+section ul {
+    width: 100%;
+    flex-wrap: wrap;
+}
+section ul li {
+    display: inline-block;
+    min-width: 400px;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+section ul li img {
+    max-width: 100%;
+}
+.books, .teach {
+    background-color: rgb(50,62,110);
+    color: #fff;
+}
+.books a, .teach a {
+    color: #fff;    
+}
+.online {
+    background-color: rgb(241,228,163);
+    color: rgb(48,66,108);
+}
+.title {
+    font-weight: 800;
+}
+.v-aligned-text {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+    transform: translateY(-70%);
+}
