@@ -152,6 +152,9 @@ section ul li img {
 .books a, .teach a {
     color: #fff;    
 }
+.teach img {
+    max-width: 400px;
+}
 .online {
     background-color: rgb(241,228,163);
     color: rgb(48,66,108);
