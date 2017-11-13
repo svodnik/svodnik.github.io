@@ -137,7 +137,7 @@ section ul {
 }
 section ul li {
     display: inline-block;
-    min-width: 400px;
+    max-width: 400px;
     margin: auto;
     padding: 1em;
     text-align: center;
