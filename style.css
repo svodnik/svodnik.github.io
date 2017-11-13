@@ -95,16 +95,8 @@ nav li {
 header {
     padding-left: 2em;
 }
-h1, h2, header p {
-    font-family: 'Roboto Slab', serif;
-}
-h2, .header-desc {
-    padding: 1rem 0;
-}
 h1 {
-    margin: 9rem 0 0;
-}
-h1 {
+    margin-top: 9rem;
     font-size: 7rem;
     font-weight: bold;
 }
@@ -113,6 +105,12 @@ h2 {
     font-weight: bold;
     text-align: center;
     width: 100%;
+}
+h1, h2, header p {
+    font-family: 'Roboto Slab', serif;
+}
+h2, .header-desc {
+    padding: 1rem 0;
 }
 .header-desc {
     font-size: 3rem;
@@ -152,16 +150,13 @@ section {
     padding: 4rem 1rem 1rem;
     text-align: center;
 }
-section h2 {
-    margin-bottom: 0.4em;
-}
 section ul {
     width: 100%;
     flex-wrap: wrap;
 }
 section ul li {
     display: inline-block;
-    max-width: 400px;
+    width: 400px;
     margin: auto;
     padding: 1em;
     text-align: center;
@@ -197,13 +192,21 @@ section ul li img {
 }
 
 @media only screen and (max-width: 500px) {
-    nav ul, nav li {
-        display: block;
-    }
     h1 {
         font-size: 4.5rem;
     }
+    h2 {
+        font-size: 3.5rem;
+        margin-top: 3.5rem;
+    }
     .header-desc {
         font-size: 2rem;
+    }
+    nav ul, nav li {
+        display: block;
+    }
+    section ul li {
+        width: auto;
+        max-width: 400px;
     }
 }
